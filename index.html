@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eigenvalue & Eigenvector Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="calculator">
+
+        <h1>Eigenvalue & Eigenvector Calculator</h1>
+
+        <p>
+            Enter a square matrix (2 × 2 up to 4 × 4) to calculate its eigenvalues and eigenvectors.
+        </p>
+
+        <section class="matrix-section">
+
+            <h2>Matrix</h2>
+
+            <div class="size-controls">
+                <button id="shrink" type="button">−</button>
+                <span id="size-label">2×2</span>
+                <button id="grow" type="button">+</button>
+            </div>
+
+            <div class="matrix-container">
+
+                <span class="matrix-label">A =</span>
+
+                <div class="matrix" id="matrix-grid"></div>
+
+            </div>
+
+            <button id="calculate">Calculate</button>
+            <p id="error-message" class="error-message"></p>
+
+        </section>
+
+        <section id="results" class="results" hidden>
+
+            <h2>Results</h2>
+
+            <h3>Eigenvalues</h3>
+
+            <div id="eigenvalues">
+                Results will appear here.
+            </div>
+
+            <button id="normalize">Normalize Eigenvectors</button>
+
+            <h3>Eigenvectors</h3>
+
+            <div id="eigenvectors">
+                Results will appear here.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

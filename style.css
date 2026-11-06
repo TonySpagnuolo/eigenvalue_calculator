@@ -1,0 +1,140 @@
+body {
+    background-color: #17191c;
+    color: #f5f5f5;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 35px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+p {
+    color: #d0d0d0;
+    line-height: 1.6;
+}
+
+.matrix-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.matrix-label {
+    font-size: 1.5rem;
+    justify-self: end;
+}
+
+.matrix {
+    display: grid;
+    gap: 6px;
+    position: relative;
+    padding: 8px 14px;
+}
+
+.matrix input {
+    width: 4.5rem;
+    box-sizing: border-box;
+}
+
+.matrix::before,
+.matrix::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.matrix::before {
+    left: 0;
+    border-left: 2px solid #f5f5f5;
+}
+
+.matrix::after {
+    right: 0;
+    border-right: 2px solid #f5f5f5;
+}
+
+
+input {
+    width: 55px;
+    padding: 10px;
+    margin: 4px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: #17191c;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 25px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #17191c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.error-message {
+    color: #e0a0a0;
+    min-height: 24px;
+    margin-top: 15px;
+}
+
+#eigenvalues,
+#eigenvectors {
+    color: #f5f5f5;
+    padding: 10px;
+    min-height: 25px;
+}
+
+#eigenvalues p,
+#eigenvectors p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.eigenvector {
+    font-size: 1.2rem;
+}
